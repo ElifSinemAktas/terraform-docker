@@ -1,0 +1,25 @@
+CHANGE TRAIN MODEL, USE PIPELINE AND SAVE MODEL TO MLFLOW
+
+CONTROL API
+uvicorn main:app --host 0.0.0.0 --port 8002 --reload 
+
+INSTALL TERRAFORM
+```commandline
+# Install yum-utils
+sudo yum install -y yum-utils
+
+# Add hashicorp repo
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+
+# Install terraform
+sudo yum -y install terraform
+
+# Check version
+terraform --version
+```
+
+CREATE main.tf FILE
+
+RUN TERRAFORM VALIDATE AND PLAN
+
+TERRAFORM APPLY
